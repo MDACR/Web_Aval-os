@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const multer = require('multer');
 const exphbs = require('express-handlebars');
 
-
+const PORT = process.env.PORT || 5000
 
 //inicializaciones
 
@@ -82,6 +82,6 @@ module.exports = app;
 
 
 // start the server
-app.listen(app.get('port'), () => {
-    console.log(`Server on port ${app.get('port')}`);
+app.listen(app.get(PORT), () => {
+    console.log(`Server on port ${app.get(PORT)}`);
 });
