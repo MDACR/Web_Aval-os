@@ -16,7 +16,7 @@ require('./database');
 
 app.set('port',process.env.PORT || 4000);
 
-app.set('views', path.join(__dirname, 'views'));
+/* app.set('views', path.join(__dirname, 'views')); */
 
 /* app.engine('.hbs',exphbs({  
 
@@ -44,7 +44,7 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 app.use(express.urlencoded({extended:false}));
 
-const storage =  multer.diskStorage({  
+/* const storage =  multer.diskStorage({  
 
     destination: path.join(__dirname, 'public/uploads'),
 
@@ -54,7 +54,7 @@ filename: (req,file,callback)=>{
 
 }
 
-});
+}); */
 
 
 app.use( function(req, res, next) {
@@ -70,7 +70,7 @@ app.use( function(req, res, next) {
 
 
 
-app.use(multer({storage}).single('image'));
+/* app.use(multer({storage}).single('image')); */
 
 /* app.use('image'); */
 
