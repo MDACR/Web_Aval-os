@@ -10,19 +10,14 @@
  <!-- FONT AWESOME -->
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
- 
-
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
  <!-- ARCHIVOS CSS BOOTSTRAP 4 -->
  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
-
-
-
  
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 
- 
  <!-- ARCHIVOS CSS PERSONALIZADOS -->
  <link type="text/css" rel="stylesheet" href="css/estilos.css">
 
@@ -37,27 +32,27 @@
 </head>
 <body>
  <!-- NAVIGATION -->
- <nav class="navbar navbar-expand-lg navbar-light ">
-    <div class="container-fluid">
-      <a class="navbar-brand ml-4" href="index.html">
-        <img src="imgs/logoM1.png" style="width: 55%;">
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top ">
+    <div class="container-fluid d-flex">
+      <a class="navbar-brand ml-2" href="/">
+        <img class="imgeL" src="imgs/logoM1.png" >
       </a>
-      <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation mr-2">
+      <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation ">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse mr-3" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item   mr-2">
-            <a href="sobreAvaluoCr.html" class="nav-link ud text-secondary " >Acerca de</a>
+            <a href="#about" class="nav-link ud text-secondary js-anchor-link" >Acerca de</a>
           </li>
           <li class="nav-item ud dropdown">
             <a class="nav-link dropdown-toggle text-secondary " data-toggle="dropdown"
                href="#" role="button" aria-haspopup="true" aria-expanded="false">
                Servicios</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item " href="#">Residencial</a>
-              <a class="dropdown-item " href="Avaluo_Comercial.html">Comercial</a>
-              <a class="dropdown-item " href="Avaluo_Fincas.html">Fincas</a>
+              <a class="dropdown-item js-anchor-link" href="#resi">Residencial</a>
+              <a class="dropdown-item js-anchor-link" href="#comerc">Comercial</a>
+              <a class="dropdown-item js-anchor-link" href="#agric">Agricola</a>
             </div>
           </li>
 
@@ -79,38 +74,217 @@
   </nav>
 
 
+   <!--  ==============================
+        Sobre
+      ================================= -->
 
 
-  <div class="card mb-3">
-    <img class="card-img-top mx-auto" src="imgs/Avaluo_Residencial.png" alt="Card image cap">
 
 
-<div class="container"> 
+      <div class="card mb-3 ">
+        <img class="card-img-top mx-auto" src="imgs/casa2.png" alt="Card image cap">
 
-    <div class="card-body">
-      <h4 class="card-title text-center">Avalúo Residencial</h4>
-      <p class="card-text text-justify">
-        El proceso de valuación de un inmueble  consiste en realizar una inspección del mismo, cuyo objetivo es la recoleccion de datos como lo es la calidad y tipo de los materiales de construcción, la edad, la ubicación donde se encuentra y el estado de conservación y obsolescencia del inmueble, servicios entre otros. Todos estos factores influyen en el valor que se determina en el avalúo, cabe destacar que los avalúos más solicitados son los de vivienda, ya sea de casas o departamentos, o terrenos sin construcciones.
-        Cada inmueble residencial debe poseer una escritura con el plano de catastro actualizado, es muy importante y a la vez requisito sobre todo en los casos que se opte por un prestamo en una entidad  financiera tener el plano catastrado con datos y medidas reales acorde a lo materializado en el sitio, muchos prestamos son rechazados por estos errores.
-          Se debe considerar que el valor  obtenido en  el avalúo del inmueble es una referencia para el  comprador, vendedor o institución financiera y no necesariamente coincide con el precio pactado,  Es un documento solido y fiable . El objetivo del avalúo es determinar el precio más probable, en una determinada fecha, como objetivo final  sea  venderse o comprarse una propiedad en especifico,  sin la necesidad de pactar un precio incorrecto o apresurado lo cual ambas partes comprador y vendedor paguen y reciban lo justo. <br>
-        </p>
+        
+      <section class="barraVerde  " style="height: .5rem; background-color: #82d127;"></section>
+        <div class="card-body">
 
-        <h5 class=""> Un documento Personal y Oficial:</h4> <br>
-        <p class="card-text text-justify">
 
- 
-Si ud tiene un documento certificado y acreditado por un profesional ingeniero debidadamente incoporado en el colegio de Ingenieros y arquitectos de Costa Rica esto da una mayor seguridad al comprador en caso de querer vender la propiedad, así mismo el respaldo solido sea en casos de tramitología que requiera el valor del inmueble, el documento es 100% confidencial el cual se entrega en fisico y digital firmados en fisico y con firma digital.
+          <h4 class="card-title text-center">Sobre AvalúoCr</h4>
+          <p class="card-text text-justify"> Con mas de 10 años de experiencia en el campo del sector inmobliario acumulando la experienncia y la actualizacion profesional que nos acredite como profesionales capacitados para llevar a cabo soluciones de servicios valuatorios a nuestros clientes, nuestro compromiso principal es entregar un avaluo correcto, confiable y basado en  procedimientos técnicos regulados y estudios de mercado. <br>
+            No solamente se entrega un avalúo sino que se asesora en la compra, venta o inversión de inmuebles. 
+            La experiencia y años en el mercado brindan confianza a los clientes, lo cual es nuestro principal objetivo.  
+           </p>
+          
+        </div>
+      </div>
+    
 
-Da seguridad al comprador
-El realizar un avalúo de tu propiedad da certeza al comprador de que el inmueble vale lo que estás pidiendo. Con este, el comprador podrá asegurarse de que el precio es justo y le será más atractivo el bien que está adquiriendo.
-</p>
-      
-     <!--  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+
+ <!--  ==============================
+         Servicios
+      ================================= -->
+
+
+
+      <section class="text-center mt-4 ">
+        <div class="container p-4">
+          <h2 class="text-center  mb-4" id="Hserv">Servicios</h2>
+     
+          <div class="row">
+
+     
+            <div class="   col-lg-4" >
+              <div class="card">
+                <div class="card-body" id="resi">
+                 <a href="Avaluo_Residencial.html" >
+                  <img src="imgs/home3.png" class="img-fluid p-2 rounded-circle  icon" >  </a>
+
+                 <a href="Avaluo_Residencial.html"> <h4>Residencial</h4> </a>
+                  <p>
+                    Avaluós de casas residenciales, lotes, apartamentos, propiedades en condominio y urbanizzaciones
+                  </p>
+
+                  <button type="button"  class="btn btn-primary btn-sm mx-auto" onclick="window.location=('Avaluo_Residencial.html')">Ver más</button>
+
+
+          
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body" id="comerc">
+                  <a href="Avaluo_Comercial.html">  
+                  <img src="imgs/home2.svg" class="img-fluid   icon" >
+                </a>
+                 <a href="Avaluo_Comercial.html"> <h4>Comercial</h4></a>
+                  <p>
+                    Valoracion de edificios, torres de apartamentos, locales comerciales, precio de alquiler de bienes inmuebles.
+                  </p>
+                  <button type="button" class="btn btn-primary btn-sm mx-auto" onclick="window.location=('Avaluo_Comercial.html')">Ver más</button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4">
+              <div class="card">
+                <div class="card-body" id="agric">
+
+                  <a href="Avaluo_Fincas.html">  
+                  <img src="imgs/farm.png" class="img-fluid   p-2 icon"  id="tract"> </a>
+                  <a href="Avaluo_Fincas.html">  <h4>Fincas</h4></a>
+                  <p>
+                    Avaluós de fincas en zonas rurales, fincas agropecuarias o predios basados en la norma tecnica rural  .
+                  </p>
+                  <button type="button" class="btn btn-primary btn-sm mx-auto rounded-pill" onclick="window.location=('Avaluo_Fincas.html')">Ver más</button>
+                </div>
+              </div>
+            </div>
+  
+       
+  
+          </div>
+        </div>
+      </section> 
+
+
+
+
+
+
+
+ <!-- ==============================
+         info
+================================= -->
+
+   
+<div class="container">  
+<div class="card pb-5 mt-4 animateMe" data-animation="fadeInLeft">
+
+<div class="row "  >
+
+<div class="col-md-3 ">
+<img src="imgs//avaluos-inmuebles.png" class="img-fluid   ">
+
+</div>
+
+<div class="col-md-9 mt-3  " >
+  <h4 class="about-title text-center">Valor real de su propiedad</h4>
+  <p class=" mx-3">
+    Conozca el valor justo del inmueble o terreno que desea comprar o vender, el cual mediante inspección, características físicas, y análisis del mercado se obtiene un dictamen técnico imparcial que determina el valor monetario. CRavaluos ofrecemos un servicio profesional acreditado por el Colegio Federado de Ingenieros y Arquitectos en Costa Rica.
+  </p>
+  
+</div>
+
+
+</div>
+
+
+
+</div>
+
+<div class="card pb-5 animateMe" data-animation="fadeInRight">
+
+  <div class="row ">
+  
+  <div class="col-md-3">
+  <img src="imgs/casa3.png" class="img-fluid ">
+  
+  </div>
+  
+  <div class="col-md-9 mt-3">
+    <h4 class="about-title text-center">¿Necesita alquilar vender o comprar alguna propiedad?</h4>
+    <p class="  mx-3">
+      Al vender o comprar una propiedad, el avalúo es una herramienta indispensable con el cual siempre se debe contar. en base a esto  permite determinar el valor comercial real y no caer en el gran  error de ponerle un precio al azar al inmueble, lo cual tambien da certeza al comprador de que el inmueble vale lo que estás pidiendo.
+    </p>
+    
+  </div>
+  
+  
+  </div>
+  
+  
+  
+  
+  </div>
+
+  <div class="card pb-5 animateMe" data-animation="fadeInUpBig" data-animation="fadeInUpBig">
+
+    <div class="row ">
+    
+    <div class="col-md-3">
+    <img src="imgs/casa4.jpg" class="img-fluid ">
+    
     </div>
-  </div>
+    
+    <div class="col-md-9 mt-3">
+      <h4 class="about-title text-center">Soluciones para alquiler de propiedades</h4>
+      <p class="  mx-3">
+        Avalúo del precio de alquileres residenciales y comerciales de todo tipo de negocio.
+        Actualmente mediante la tecnología es posible el alquiler de propiedades en plataformas como booking, airbnb entre otras, crAvaluos además de calcular un precio justo acorde al mercado actual de alquiler por días o por mes ofrecemos la asesoría para la incorporación a estas plataformas de manera correcta y en beneficio del cliente.
+  
+      </p>
+      
+    </div>
+    
+    
+    </div>
+    
+    
+    
+    
+    </div>
+
+
+
+    
   </div>
 
 
+
+    
+
+
+
+<!-- ABOUT -->
+<!-- 
+<div class="container-fluid p-0" id="about">
+  <section class="row no-gutters align-items-center aboutN ">
+      <div class="col-12 text-center d-flex">
+          <img class="img-fluid " src="imgs/About.png">
+
+          <h4   class="textSobre position-absolute  mt-3 text-center">Sobre AvaluoCr</h4>
+
+          <p style="left: 20%;" class="text-justify position-absolute mr-4  mt-5 px-1 pt-2"> Con mas de 10 años de experiencia en el campo del sector inmobliario acumulando la experienncia y la actualizacion profesional que nos acredite como profesionales capacitados para llevar a cabo soluciones de servicios valuatorios a nuestros clientes, nuestro compromiso principal es entregar un avaluo correcto, confiable y basado en  procedimientos técnicos regulados y estudios de mercado. <br>
+            No solamente se entrega un avalúo sino que se asesora en la compra, venta o inversión de inmuebles. 
+            La experiencia y años en el mercado brindan confianza a los clientes, lo cual es nuestro principal objetivo. </p> 
+            <!-- <p style="right: 5%;" class=" position-absolute text-danger mt-5 "  >    </p> -->
+
+
+      </div>
+  </section>
+</div> -->
 <section  id="clickCotizar" class="d-flex justify-content-center align-items-center animateMe" data-animation="bounceIn">
 
 
@@ -125,6 +299,7 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
 
 
 <!-- FOOTER -->
+<footer> 
 
 <section id="contact" class="section-padding wow fadeInUp delay-05s pt-4 pb-3">
   <div class="container">
@@ -136,7 +311,6 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
       </div>
 
 
-    
       <div class="col-md-6 col-sm-6 col-xs-12 animateMe d-flex justify-content-center align-items-center " data-animation="bounceIn">
         <div class="loction-info white  ">
          <!--  <p class="d-flex justify-content-center"><i class="fa fa-map-marker  fa-fw pull-left fa-2x "></i>A99 Adam Street, TX 555072</p> -->
@@ -146,10 +320,10 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
 
 
           <div class="d-flex justify-content-center align-items-center "> 
-            <p class="mb-0 mr-2">Click para Cotizar</p>
-                 <button type="button  " class="btn btn-primary" onclick="window.location=('CotizarAvaluo.html')">Ver más</button>
-           
-          </div>
+          <p class="mb-0 mr-2">Click para Cotizar</p>
+               <button type="button  " class="btn btn-primary" onclick="window.location=('CotizarAvaluo.html')">Ver más</button>
+         
+        </div>
         </div>
       </div>
 
@@ -180,7 +354,7 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
    
             <div class="col-md-12">
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Campo obligatorio" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Campo obligatorio" id="comentario" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
               <button type="submit" class="btn  btn-submit">Enviar</button>
@@ -194,17 +368,9 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
 </section>
 
 
-<div class="center">
 
 
-  <div class="animateMe" data-animation="fadeInLeft" ></div>
-  <div class="animateMe" data-animation="fadeInRight"></div>
-
-  
-</div>
-
-
-
+</footer>
 
 
 
@@ -220,7 +386,6 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
     </div>
   </div>
 </footer>
-
 
 
 <!-- BTON WHASTAPP -->
@@ -277,10 +442,10 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
 <a class='blantershow-chat' href='javascript:void' title='Show Chat'><svg width="20" viewBox="0 0 24 24"><defs/><path fill="#eceff1" d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z"/><path fill="#4caf50" d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z"/><path fill="#fafafa" d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z"/></svg> Chat</a>
 
 
-
-
 <!-- Back to top button -->
 <a id="button"></a>
+
+
 
       
   <!-- BOOTSTRAP SCRIPTS -->
@@ -300,4 +465,3 @@ El realizar un avalúo de tu propiedad da certeza al comprador de que el inmuebl
     <script src="js/general.js"></script>
 </body>
 </html>
-
