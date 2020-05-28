@@ -173,7 +173,7 @@ const { imageURL } = req.body;
 });
 
 
-
+/* 
 router.get('/registrarPhotosUrl', async (req, res) => {
   
 
@@ -190,7 +190,7 @@ router.get('/registrarPhotosUrl', async (req, res) => {
         }
         
     });
-
+ */
 
 
 

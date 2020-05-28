@@ -82,6 +82,6 @@ module.exports = app;
 
 
 // start the server
-app.listen(app.get(PORT), () => {
+/* app.listen(app.get(PORT), () => {
     console.log(`Server on port ${app.get(PORT)}`);
-});
+}); */
