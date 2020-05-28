@@ -56,14 +56,6 @@ res.render('images')
 
 
 
-    router.get('/listar_comentarios', async (req,res) => {
-
-res.send('hola');
-        const photos = await Photo.find();
-        /* res.render('image_form',{photos}); */
-        
-        }   );
-
 
         router.post('/registrar_comentario', async (req,res) => {
 
@@ -123,7 +115,7 @@ res.send('hola');
                     }   );
 
 
- 
+ /* 
                     router.get('/listarComentarios', async (req, res) => {
                  
                         Comentario.find().then(
@@ -149,7 +141,7 @@ res.send('hola');
                     
                     
                     });
-
+ */
                    
 
 
