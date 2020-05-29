@@ -1,3 +1,3 @@
 
 
-<?php require_once("public/index.html")?>
+g<?php require_once("public/index.html")?>
